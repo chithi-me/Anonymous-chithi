@@ -26,7 +26,6 @@
             padding: 20px;
         }
 
-        /* ভিন্টেজ পুরোনো কাগজের মতো কন্টেইনার */
         .vintage-paper {
             background: #e8dfc8;
             background-image: 
@@ -45,7 +44,6 @@
             position: relative;
         }
 
-        /* চিঠির উপরে পুরোনো স্ট্যাম্প ফিল */
         .stamp {
             position: absolute;
             top: 15px;
@@ -78,7 +76,6 @@
             font-style: italic;
         }
 
-        /* চিঠি লেখার প্যাড বা রুল করা দাগ */
         textarea {
             width: 100%;
             height: 180px;
@@ -105,7 +102,6 @@
             opacity: 0.5;
         }
 
-        /* ভিন্টেজ বাটন */
         button {
             width: 100%;
             background: #5c4328;
@@ -134,12 +130,13 @@
     <h2>বেনামী চিঠি</h2>
     <p class="subtitle">আপনার গোপন মনের অনুভূতিটি লিখে পাঠিয়ে দিন...</p>
     
-    <form>
-        <textarea placeholder="প্রিয় অচেনা,... (এখানে গোপন চিঠিটি লিখুন)"></textarea>
+    <!-- https://formspree.io/f/xyeykrqlবে -->
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_CODE_HERE" method="POST">
+        <textarea name="message" placeholder="প্রিয় অচেনা,... (এখানে গোপন চিঠিটি লিখুন)" required></textarea>
         <div class="divider"></div>
-        <button type="button" onclick="alert('চিঠিটি গোপনে পাঠিয়ে দেওয়া হয়েছে!')">চিঠি মোহর করুন ✉️</button>
+        <button type="submit">চিঠি মোহর করুন ✉️</button>
     </form>
 </div>
 
 </body>
-</html>
+</html>            
